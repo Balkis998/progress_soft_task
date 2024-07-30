@@ -67,7 +67,6 @@ class LoginCubit extends Cubit<LoginState> {
         },
         verificationFailed: (FirebaseAuthException e) {
           if (!isClosed) {
-            print('e.message === $e');
             emit(AuthFailure(e.message ?? KeyLang.verificationFailed.tr()));
           }
         },
@@ -111,7 +110,6 @@ class LoginCubit extends Cubit<LoginState> {
         return userCredential;
       }
     } catch (e) {
-      print('e.toString() == ${e.toString()}');
       emit(AuthFailure(e.toString()));
     }
     return null;

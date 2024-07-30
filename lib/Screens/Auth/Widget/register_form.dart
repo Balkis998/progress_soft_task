@@ -1,3 +1,5 @@
+// ignore_for_file: use_build_context_synchronously
+
 import 'package:country_codes/country_codes.dart';
 import 'package:easy_localization/easy_localization.dart';
 import 'package:flutter/material.dart';
@@ -70,7 +72,6 @@ class _RegisterFormState extends State<RegisterForm> {
 
     // Use the result from OTPScreen to save to database
     if (result != null) {
-      print('result === $result');
       context.read<RegisterCubit>().saveToDatabase(
           fullName: fullNameController.text,
           phone: countryCode + phoneController.text,
@@ -184,7 +185,6 @@ class _RegisterFormState extends State<RegisterForm> {
                           genderController.text = 'male';
                         }
                         genderValue = value;
-                        print(genderController.text);
                         setState(() {});
                       }),
                   SizedBox(height: 16.h),

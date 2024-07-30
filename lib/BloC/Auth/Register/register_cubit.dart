@@ -18,8 +18,6 @@ class RegisterCubit extends Cubit<RegisterState> {
   void verifyPhoneNumber(String phoneNumber) async {
     emit(RegisterLoading());
 
-    print('phoneNumber == $phoneNumber');
-
     await _auth.verifyPhoneNumber(
       phoneNumber: phoneNumber,
       verificationCompleted: (PhoneAuthCredential credential) async {
@@ -27,10 +25,6 @@ class RegisterCubit extends Cubit<RegisterState> {
         emit(RegisterSuccess());
       },
       verificationFailed: (FirebaseAuthException e) {
-        print('e.message == ${e.message}');
-        print('e.message == $e');
-        print('Verification failed with error: ${e.code}');
-
         emit(RegisterError(e.message ?? KeyLang.verificationFailed.tr()));
       },
       codeSent: (String verificationId, int? resendToken) {
@@ -60,7 +54,6 @@ class RegisterCubit extends Cubit<RegisterState> {
 
       return userCredential;
     } catch (e) {
-      print('e.toString() == ${e.toString()}');
       emit(RegisterError(e.toString()));
     }
     return null;

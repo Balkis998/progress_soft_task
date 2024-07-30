@@ -132,14 +132,11 @@ class _OtpFormState extends State<OtpForm> {
           onPressed: () async {
             if (otp.length == 6) {
               if (widget.isLogin == true) {
-                print('he');
                 UserCredential? userCredential =
                     await context.read<LoginCubit>().verifyOTP(
                           smsCode: otp,
                           verificationId: widget.verificationId ?? '',
                         );
-
-                print('userCredential == $userCredential');
 
                 if (userCredential != null) {
                   Navigator.pushNamedAndRemoveUntil(
