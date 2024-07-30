@@ -5,6 +5,7 @@ import 'package:flutter_bloc/flutter_bloc.dart';
 import '../../BloC/Home/post_bloc.dart';
 import '../../BloC/Profile/profile_cubit.dart';
 import '../../Language/key_lang.dart';
+import '../../Theme/app_colors.dart';
 import 'Widget/home_tab.dart';
 import 'Widget/profile_tab.dart';
 
@@ -31,6 +32,7 @@ class _HomeScreenState extends State<HomeScreen> {
         BlocProvider(create: (context) => ProfileCubit()),
       ],
       child: Scaffold(
+        backgroundColor: Colors.white,
         appBar: AppBar(
           title: Text(KeyLang.title.tr()),
         ),
@@ -42,14 +44,26 @@ class _HomeScreenState extends State<HomeScreen> {
               _currentIndex = index;
             });
           },
+          backgroundColor: Colors.white,
+          elevation: 5,
+          unselectedItemColor: AppColors.secondaryColor,
+          selectedItemColor: AppColors.mainColor,
           items: [
             BottomNavigationBarItem(
-              icon: const Icon(Icons.home),
+              icon: Icon(
+                Icons.home,
+                color: _currentIndex == 0
+                    ? AppColors.mainColor
+                    : AppColors.secondaryColor,
+              ),
               label: KeyLang.home.tr(),
             ),
             BottomNavigationBarItem(
-              icon: const Icon(
+              icon: Icon(
                 Icons.person,
+                color: _currentIndex == 1
+                    ? AppColors.mainColor
+                    : AppColors.secondaryColor,
               ),
               label: KeyLang.profile.tr(),
             ),

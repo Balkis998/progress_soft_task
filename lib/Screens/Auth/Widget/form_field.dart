@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 
 import '../../../Style/form_style.dart';
+import '../../../Theme/app_colors.dart';
 
 class FormFieldWidget extends StatelessWidget {
   final String? Function(String?)? validator;
@@ -37,7 +38,11 @@ class FormFieldWidget extends StatelessWidget {
       onTap: onTap,
       validator: validator,
       decoration: AppStyles.formStyle(hint,
-          hintStyle: hintStyle, prefixIcon: prefixIcon),
+          hintStyle: hintStyle,
+          filledColor: readOnly
+              ? AppColors.secondaryColor.withOpacity(0.5)
+              : AppColors.formFillColor,
+          prefixIcon: prefixIcon),
     );
   }
 }

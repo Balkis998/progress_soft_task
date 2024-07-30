@@ -35,7 +35,8 @@ class SplashScreenState extends State<SplashScreen> {
 
   getToken() async {
     const FlutterSecureStorage secureStorage = FlutterSecureStorage();
-    token = await secureStorage.read(key: 'user_token');
+    token = await secureStorage.read(
+        key: 'user_token'); //  check if there is token or not
   }
 
   @override
@@ -47,7 +48,7 @@ class SplashScreenState extends State<SplashScreen> {
           body: Center(
             child: Column(
               mainAxisAlignment: MainAxisAlignment.center,
-              children: <Widget>[
+              children: [
                 Image.asset(ImageAssets.logo),
                 const SizedBox(height: 20),
                 Text(
