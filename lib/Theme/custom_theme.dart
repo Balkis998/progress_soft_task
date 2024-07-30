@@ -4,7 +4,6 @@ import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'app_colors.dart';
 import 'text_theme.dart';
 
-/// Doc : https://api.flutter.dev/flutter/material/TextTheme-class.html
 class CustomTheme {
   // * * * * * * * * * * * * *** Light *** * * * * * * * * * * * *
   static ThemeData lightTheme(BuildContext context) {
