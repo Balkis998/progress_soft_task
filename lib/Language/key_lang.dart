@@ -1,0 +1,52 @@
+class KeyLang {
+  static const String withMobile = 'withMobile';
+  static const String errorPass = 'errorPass';
+  static const String enterValue = 'enterValue';
+  static const String password = 'password';
+  static const String phone = 'phone';
+  static const String login = 'login';
+  static const String register = 'register';
+  static const String errorConfirmPass = 'errorConfirmPass';
+  static const String errorPhoneNumber = 'errorPhoneNumber';
+  static const String arabicLang = 'arabicLang';
+  static const String english = 'english';
+
+  static const String dontHaveAccount = 'dontHaveAccount';
+  static const String haveAccount = 'haveAccount';
+  static const String selectLang = 'selectLang';
+  static const String save = 'save';
+  static const String fullName = 'fullName';
+  static const String gender = 'gender';
+  static const String age = 'age';
+  static const String confirmPass = 'confirmPass';
+
+  static const String profile = 'profile';
+  static const String home = 'home';
+  static const String search = 'search';
+  static const String somethingWrong = 'somethingWrong';
+  static const String title = 'title';
+  static const String logout = 'logout';
+  static const String enterCode = 'enterCode';
+  static const String code = 'code';
+  static const String verify = 'verify';
+  static const String userNotRegistered = 'userNotRegistered';
+  static const String userNotRegisteredMessage = 'userNotRegisteredMessage';
+  static const String cancel = 'cancel';
+  static const String confirmCode = 'confirmCode';
+  static const String didntRecieve = 'didntRecieve';
+  static const String resend = 'resend';
+  static const String errorAge = 'errorAge';
+  static const String errorGender = 'errorGender';
+  static const String errorFullName = 'errorFullName';
+  static const String successRegister = 'successRegister';
+  static const String female = 'female';
+  static const String male = 'male';
+  static const String select = 'select';
+  static const String noUser = 'noUser';
+  static const String successLogin = 'successLogin';
+  static const String incorrectPassword = 'incorrectPassword';
+  static const String verificationFailed = 'verificationFailed';
+  static const String userNotFound = 'userNotFound';
+  static const String error = 'error';
+  static const String personalInfo = 'personalInfo';
+}

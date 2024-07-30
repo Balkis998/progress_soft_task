@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>API_KEY</key>
+	<string>AIzaSyC6BEL7yERjuqCgr--G3F7rJ9es6vlE3CI</string>
+	<key>GCM_SENDER_ID</key>
+	<string>827089864860</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.progresssoft.task</string>
+	<key>PROJECT_ID</key>
+	<string>progress-soft-f0ed2</string>
+	<key>STORAGE_BUCKET</key>
+	<string>progress-soft-f0ed2.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:827089864860:ios:65b26813a274bb484d4559</string>
+</dict>
+</plist>
